@@ -1,4 +1,4 @@
-public class Professor extends Pessoa {
+public final class Professor extends Pessoa implements Remuneravel{
     private String especialidade;
 
     public Professor(){}
@@ -21,4 +21,16 @@ public class Professor extends Pessoa {
                 "especialidade='" + especialidade + '\'' +
                 '}';
     }
+
+    @Override
+    public void aplicarBonus() {
+
+    }
+
+    @Override
+    public void calcularSalairo() {
+
+
+    }
+
 }

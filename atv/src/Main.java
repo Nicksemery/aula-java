@@ -6,12 +6,14 @@ public class Main {
         Pessoa a = new Aluno("Joãozinho",12);
         Disciplina d = new Disciplina("Matemática");
 
+        TrasnformaçãoPolimorfica t = new TrasnformaçãoPolimorfica();
+        t.polimorfismo_interface((Remuneravel) p);
+        //t.polimorfismo_interface();
 
 
 
-
-       // d.cadastrarAluno((Aluno) a);
-      //  d.ministrarDisciplina((Professor) p);
+        d.cadastrarAluno((Aluno) a);
+        d.ministrarDisciplina((Professor) p);
 
         System.out.println("Informações do Professor:");
         System.out.println(p);
